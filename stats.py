@@ -3,6 +3,8 @@
 
 def mean(values):
     """Arithmetic mean. The mean of an empty list is 0.0 (see README)."""
+    if not values:
+        return 0.0
     return sum(values) / len(values)
 
 
